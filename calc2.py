@@ -1,4 +1,4 @@
-typee = input("Enter the identity: ")
+typee = input("Enter the Math identity or physics: ")
 try:
     if typee == "identity5":
         num_1 = float(input("Enter the first number: "))
@@ -13,7 +13,7 @@ try:
         num1 = float(input("Enter the first number: "))
         num2 = float(input("Enter the second number: "))
         yeet  = pow(num1, 3) + pow(num2, 3) + (3 * pow(num1, 2) * num2) + (3 * num1 * pow(num2, 2)) 
-        print(str(num1) + "^3 + " + str(num2) + "^3 + 3 * " + str(num1) + " * " + str(num2) + "(" + str(num1) + " + " + str(num2) + ")")
+        print(str(num1) + "^3 + " + str(num2) + "^3 + 3 * " + str(num1) + "^2 * " + str(num2) + " + 3 * " + str(num1) + " * " + str(num2) + "^2")
         print("(x + y)^3")
         print(yeet)
 
@@ -40,6 +40,12 @@ try:
         print("( " + str(num7) + " - " + str(num8) + " )( " + str(num7) + "^2 + " + str(num8) + "^2 + " + str(num7) + " * " + str(num8) + " )")
         print("x^3 - y^3")
         print(yeeeeet)
-
+    elif typee == "speed":
+        distance = float(input("Enter the total distance: "))
+        unit = input("Enter whether km/h or m/s: ")
+        time = float(input("Enter the total time: ")) 
+        avspeed = distance / time
+        print("Distance = " + str(distance) + "\nTime = " + str(time) + "\nAverage Speed = Total Distance/Total Time = " + str(distance) + "/" + str(time) + " = " + str(avspeed) + unit)
+            
 except:
     print("No variables allowed")
